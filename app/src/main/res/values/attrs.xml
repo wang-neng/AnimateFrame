@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义属性 -->
+    <declare-styleable name="DiscrollView_LayoutParams">
+        <!-- alpha:透明度  scale:缩放  translation:移动 from:从 to:到 -->
+        <attr name="discrollve_alpha" format="boolean"/>
+        <attr name="discrollve_scaleX" format="boolean"/>
+        <attr name="discrollve_scaleY" format="boolean"/>
+        <attr name="discrollve_fromBgColor" format="color"/>
+        <attr name="discrollve_toBgColor" format="color"/>
+        <attr name="discrollve_translation"/>
+    </declare-styleable>
+
+    <!--  自定义属性:平移属性  枚举 -->
+    <attr name="discrollve_translation">
+        <flag name="fromTop" value="0x01"/>
+        <flag name="fromBottom" value="0x02"/>
+        <flag name="fromLeft" value="0x04"/>
+        <flag name="fromRight" value="0x08"/>
+    </attr>
+</resources>
